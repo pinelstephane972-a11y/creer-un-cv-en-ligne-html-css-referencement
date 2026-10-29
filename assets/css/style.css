@@ -1,0 +1,143 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f6f9;
+    color: #333;
+    padding: 20px;
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+a {
+    color: inherit;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+.cv-container {
+    max-width: 900px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.cv-header {
+    background-color: #2c3e50;
+    color: #fff;
+    text-align: center;
+    padding: 30px;
+}
+
+.contact-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px 20px;
+    margin-top: 15px;
+    list-style: none;
+}
+
+.contact-list li {
+    margin: 0;
+}
+
+.avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #fff;
+    margin: 0 auto 15px;
+}
+
+.cv-main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cv-left {
+    flex: 1;
+    background-color: #ecf0f1;
+    padding: 20px;
+    min-width: 250px;
+}
+
+.cv-right {
+    flex: 2;
+    padding: 20px;
+    min-width: 300px;
+}
+
+h3 {
+    border-bottom: 2px solid #2c3e50;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+    color: #2c3e50;
+    font-size: 1.1rem;
+}
+
+ul {
+    list-style-type: none;
+    margin-bottom: 20px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+article {
+    margin-bottom: 15px;
+}
+
+.date {
+    font-size: 0.85rem;
+    color: #7f8c8d;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.cv-footer {
+    text-align: center;
+    background-color: #f8f9fa;
+    padding: 15px;
+    font-size: 0.9rem;
+}
+
+.cv-footer a {
+    color: #2980b9;
+    text-decoration: none;
+}
+
+.cv-footer a:hover,
+.cv-footer a:focus {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    .cv-main {
+        flex-direction: column;
+    }
+
+    .cv-left,
+    .cv-right {
+        min-width: 100%;
+    }
+}
